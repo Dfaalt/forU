@@ -42,7 +42,8 @@ const mulaikonten = () => {
   wallpaper.style = "transform: scale(2); opacity:1;"; // Menetapkan style untuk wallpaper
   fotoakhir.style = "display:inline-flex;"; // Menampilkan elemen fotoakhir
   setTimeout(ftmuncul, 200); // Menjalankan fungsi ftmuncul setelah 200ms
-  bq.style = "position:relative; opacity:1; visibility:visible; transform: scale(1); border-radius:var(--bingkai); margin-top:0;"; // Menetapkan style untuk elemen bq
+  bq.style =
+    "position:relative; opacity:1; visibility:visible; transform: scale(1); border-radius:var(--bingkai); margin-top:0;"; // Menetapkan style untuk elemen bq
   fungsi = 1; // Mengatur fungsi menjadi 1
   setTimeout(tombol, 500); // Menjalankan fungsi tombol setelah 500ms
 };
@@ -55,18 +56,21 @@ const ftmuncul = () => {
       break;
     case 1:
       fotoakhir.src = fotoakhir2.src;
-      fotoakhir.style = "display:inline-flex; opacity:1; transition:all .7s ease; transform:scale(1);";
+      fotoakhir.style =
+        "display:inline-flex; opacity:1; transition:all .7s ease; transform:scale(1);";
       break;
     case 2:
       fotoakhir.src = fotoakhir3.src;
-      fotoakhir.style = "display:inline-flex; opacity:1; transition:all .7s ease; transform:scale(1);";
+      fotoakhir.style =
+        "display:inline-flex; opacity:1; transition:all .7s ease; transform:scale(1);";
       break;
   }
 };
 
 // Fungsi untuk menyembunyikan fotoakhir
 const fthilang = () => {
-  fotoakhir.style = "display:inline-flex; opacity:1; transition:all .7s ease; transform:scale(.1);";
+  fotoakhir.style =
+    "display:inline-flex; opacity:1; transition:all .7s ease; transform:scale(.1);";
 };
 
 // Fungsi untuk animasi fotoakhir
@@ -132,8 +136,18 @@ const dd = String(today.getDate()).padStart(2, "0");
 const mm = String(today.getMonth() + 1).padStart(2, "0");
 const yyyy = today.getFullYear();
 const monthNames = [
-  "Januari", "Februari", "Maret", "April", "Mei", "Juni",
-  "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+  "Januari",
+  "Februari",
+  "Maret",
+  "April",
+  "Mei",
+  "Juni",
+  "Juli",
+  "Agustus",
+  "September",
+  "Oktober",
+  "November",
+  "Desember",
 ];
 today = `${dd} ${monthNames[today.getMonth()]} ${yyyy}`;
 
