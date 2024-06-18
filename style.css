@@ -1,0 +1,9 @@
+:root {
+  --warna-bg: rgba(0, 0, 0, 0.5);
+  --warna-teks: #fff;
+  --warna-bingkai: #fff;
+  --bingkai: 8px;
+  --bingkai-kiri: 2px solid var(--warna-bingkai);
+  --bingkai-kanan: 2px solid var(--warna-bingkai);
+  --gaya-font: "Josefin Sans", sans-serif;
+}
